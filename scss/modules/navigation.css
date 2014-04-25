@@ -1,0 +1,26 @@
+.menu__nav {
+  font: 40px "3826";
+  color: #595959;
+  margin: 30px 0 0 30px; }
+  .menu__nav li {
+    float: left;
+    width: 100%;
+    height: 31px; }
+    .menu__nav li:nth-child(1) a:hover {
+      color: #d66f74; }
+    .menu__nav li:nth-child(2) a:hover {
+      color: #309ebc; }
+    .menu__nav li:nth-child(3) a:hover {
+      color: #91c368; }
+    .menu__nav li:nth-child(4) a:hover {
+      color: #516fa9; }
+    .menu__nav li:nth-child(5) a:hover {
+      color: #f52e67; }
+  .menu__nav a {
+    text-transform: uppercase;
+    color: inherit;
+    word-spacing: -5px;
+    letter-spacing: -2px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear; }

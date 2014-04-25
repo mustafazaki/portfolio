@@ -1,0 +1,19 @@
+$font-family: '3826';
+$secondary-color: #595959;
+
+
+
+////////////mixins////////////////
+@mixin overlay($z-index){
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  @if ($z-index !=""){
+	z-index:$z-index
+  }
+
+
+}
+
+////////////mixins////////////////

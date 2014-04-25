@@ -1,0 +1,65 @@
+@import "../../bourbon/bourbon";
+@import "../functions";
+
+.menu__nav {
+  font: 40px $font-family;
+  color: $secondary-color;
+  margin: 30px 0 0 30px;
+
+  li {
+	float: left;
+	width: 100%;
+	height: 31px;
+
+	$i: 1;
+	$animals: #d66f74, #309ebc, #91c368, #516fa9, #f52e67;
+
+	@each $section in $animals {
+	  &:nth-child(#{$i}) a:hover {
+
+		color: nth($animals, $i);
+
+		$i: $i+1;
+	  }
+
+	}
+
+  }
+  a {
+	text-transform: uppercase;
+	color: inherit;
+	word-spacing: -5px;
+	letter-spacing: -2px;
+	@include transition(all 0.3s linear);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

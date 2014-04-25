@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "3826";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/3826.eot");
+  src: url("../fonts/3826.eot?#iefix") format("embedded-opentype"), url("../fonts/3826.woff") format("woff"), url("../fonts/3826.ttf") format("truetype"), url("../fonts/3826.svg#3826") format("svg"); }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "3826";
+    src: url("../fonts/3826.svg#3826") format("svg"); } }
