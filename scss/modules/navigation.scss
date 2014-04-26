@@ -2,14 +2,15 @@
 @import "../functions";
 
 .menu__nav {
-  font: 40px $font-family;
+  font: 35px $secondary-font;
   color: $secondary-color;
   margin: 30px 0 0 30px;
+  float: left;
 
   li {
 	float: left;
 	width: 100%;
-	height: 31px;
+	height: 26px;
 
 	$i: 1;
 	$animals: #d66f74, #309ebc, #91c368, #516fa9, #f52e67;

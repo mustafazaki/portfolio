@@ -27,26 +27,35 @@ module.exports = function (grunt) {
 				separator: '\n'
 			},
 			dist: {
-				src: ['scss/normalize.css', 'scss/fontface.css', 'scss/default.css','scss/modules/*.css'],
+				src: ['scss/normalize.css', 'scss/fontface.css', 'scss/base.css','scss/modules/*.css'],
 				dest: 'css/style.css'
+			}
+		},
+		includes: {
+			files: {
+				src: ['pages/index.html'] ,
+				dest: 'index.html'
 			}
 		},
 		watch: {
 			scripts: {
 				files: ['**/*.scss', '**/*.js', '**/*.html'],
-				tasks: ['concat'],
+				tasks: ['concat','includes'],
 				options: {
 					livereload: true
 
 				}
 			}
 		}
+
+
     });
 
     // Load the plugin that provides the "uglify" task.
    // grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-includes');
 
 
     // Default task(s).
