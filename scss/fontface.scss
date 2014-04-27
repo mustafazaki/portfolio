@@ -1,6 +1,7 @@
 @import "../bourbon/bourbon";
-@import "functions";
+@import "_functions";
 
 
 @include font-face($secondary-font, '../fonts/3826');
+@include font-face($font-awesome, '../fonts/fontawesome-webfont');
 

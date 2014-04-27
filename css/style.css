@@ -210,6 +210,16 @@ table {
   @font-face {
     font-family: "3826";
     src: url("../fonts/3826.svg#3826") format("svg"); } }
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#FontAwesome") format("svg"); }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "FontAwesome";
+    src: url("../fonts/fontawesome-webfont.svg#FontAwesome") format("svg"); } }
 
 body {
   background: url(../img/bg_pattern_12.png) gray;
@@ -251,6 +261,17 @@ body {
     .about__section .thumb__div img {
       width: 100%;
       position: relative; }
+
+.links__section {
+  font-family: "FontAwesome"; }
+  .links__section li:nth-child(1) a:after {
+    content: "\f082"; }
+  .links__section li:nth-child(2) a:after {
+    content: "\f081"; }
+  .links__section li:nth-child(3) a:after {
+    content: "\f08c"; }
+  .links__section li:nth-child(4) a:after {
+    content: "\f09b"; }
 
 .menu__nav {
   font: 35px "3826";

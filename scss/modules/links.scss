@@ -1,0 +1,19 @@
+@import "../../bourbon/bourbon";
+@import "../_functions";
+
+.links__section {
+  font-family: $font-awesome;
+
+  li{
+	$i: 1;
+	$animals: "\f082", '\f081', '\f08c', '\f09b';
+	@each $section in $animals {
+	  &:nth-child(#{$i}) a:after {
+		content: nth($animals, $i);
+		$i: $i+1;
+	  }
+	}
+  }
+
+
+}
