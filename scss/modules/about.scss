@@ -9,7 +9,7 @@
   font: italic 14px $primary-font;
   color: $secondary-color;
   position: absolute;
-  left: 350px;
+  left: $container-left;
   background: #fff;
 
   .thumb__div {

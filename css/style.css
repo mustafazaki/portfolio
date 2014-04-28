@@ -37,7 +37,8 @@ textarea {
   font-family: sans-serif; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 a {
   background: transparent;
@@ -192,6 +193,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 li {
   list-style: none; }
 
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
 textarea {
   overflow: auto;
   vertical-align: top; }
@@ -263,15 +268,35 @@ body {
       position: relative; }
 
 .links__section {
-  font-family: "FontAwesome"; }
-  .links__section li:nth-child(1) a:after {
-    content: "\f082"; }
-  .links__section li:nth-child(2) a:after {
-    content: "\f081"; }
-  .links__section li:nth-child(3) a:after {
-    content: "\f08c"; }
-  .links__section li:nth-child(4) a:after {
-    content: "\f09b"; }
+  font-family: "FontAwesome";
+  left: 350px;
+  color: #302d2b;
+  background: #fff;
+  left: 350px;
+  width: 80px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: #6a635f;
+  box-shadow: inset 7px -4px 8px -4px black; }
+  .links__section li {
+    width: 100%;
+    float: left;
+    height: 80px;
+    text-align: center;
+    background: #56504d; }
+    .links__section li:nth-child(1) a:after {
+      content: "\f09a";
+      font-size: 40px; }
+    .links__section li:nth-child(2) a:after {
+      content: "\f099";
+      font-size: 40px; }
+    .links__section li:nth-child(3) a:after {
+      content: "\f0e1";
+      font-size: 40px; }
+    .links__section li:nth-child(4) a:after {
+      content: "\f113";
+      font-size: 40px; }
 
 .menu__nav {
   font: 35px "3826";

@@ -28,7 +28,7 @@ var app = {
 		request.send();
 	},
 	init: function() {
-		app.getAndSetFbCover();
+	//	app.getAndSetFbCover();
 	}
 
 

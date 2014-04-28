@@ -3,17 +3,25 @@
 
 .links__section {
   font-family: $font-awesome;
+  left: $container-left;
+  color: #302d2b;
+  background: #fff;
+  @include container-small(#6a635f, #000);
 
-  li{
+  li {
+	width: 100%;
+	float: left;
+	height: 80px;
+	text-align: center;
+	background: #56504d;
 	$i: 1;
-	$animals: "\f082", '\f081', '\f08c', '\f09b';
+	$animals: "\f09a", '\f099', '\f0e1', '\f113';
 	@each $section in $animals {
 	  &:nth-child(#{$i}) a:after {
 		content: nth($animals, $i);
+		font-size: 40px;
 		$i: $i+1;
 	  }
 	}
   }
-
-
 }
