@@ -15,6 +15,8 @@
 	$i: 1;
 	$animals: #d66f74, #309ebc, #91c368, #516fa9, #f52e67;
 
+
+
 	@each $section in $animals {
 	  &:nth-child(#{$i}) a:hover {
 
