@@ -3,6 +3,9 @@ $primary-font: 'georgia';
 $font-awesome: 'FontAwesome';
 $secondary-color: #595959;
 $container-left: 350px;
+$body-bg: url('../img/bg_pattern_12.png');
+
+
 
 ////////////mixins////////////////
 @mixin overlay($z-index) {
@@ -15,14 +18,41 @@ $container-left: 350px;
   }
 }
 
-@mixin container-small($background, $box-shadow) {
+@mixin container-small($background) {
   left: $container-left;
   width: 80px;
   position: absolute;
   top: 0;
   height: 100%;
   background: $background;
+
+}
+
+@mixin container-small-after($box-shadow) {
+  left: 0;
+  width: 10px;
+  position: absolute;
+  top: 0;
+  height: 104%;
+  content: "";
   box-shadow: inset 7px -4px 8px -4px $box-shadow;
+}
+
+@mixin absolute($top, $right, $bottom, $left) {
+  position: absolute;
+  @if ($left != "") {
+	left: $left;
+  }
+  @if ($top != "") {
+	top: $top;
+  }
+  @if ($bottom != "") {
+	bottom: $bottom;
+
+  }
+  @if ($right != "") {
+	right: $right;
+  }
 }
 
 ////////////mixins////////////////

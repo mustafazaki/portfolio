@@ -1,21 +1,23 @@
 @import "../bourbon/bourbon";
 @import "_functions";
 
-
-
 body {
-  background: url(../img/bg_pattern_12.png) grey;
-@include overlay(1);
+  background: $body-bg grey;
+
+  overflow: hidden;
+  @include overlay(1);
 
 }
-.bg{
+
+.bg {
   @include overlay(0);
   background: url("../img/smoothVignette.png") no-repeat scroll center center/100% 100% content-box;
   z-index: 0;
 
 }
-.container{
-@include overlay(2);
+
+.container {
+  @include overlay(2);
   z-index: 1;
   position: relative;
 }

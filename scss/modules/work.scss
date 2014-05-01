@@ -1,0 +1,27 @@
+@import "../../bourbon/bourbon";
+@import "../_functions";
+
+.work__section {
+
+  @include container-small(#309ebc);
+  li {
+	width: 80px;
+	height: 80px;
+	position: relative;
+	img {
+	  opacity: 0.5;
+	  cursor: pointer;
+	}
+
+	//	&:after{
+	//
+	//	  @include overlay(1);
+	//	  left: 0;
+	//	  content: "";
+	//	  top: 0;
+	//	  background: rgba(48, 158, 188,0.8);
+	//
+	//	}
+  }
+
+}

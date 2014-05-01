@@ -6,22 +6,65 @@
   left: $container-left;
   color: #302d2b;
   background: #fff;
-  @include container-small(#6a635f, #000);
+  @include container-small(#6a635f);
+  &:after {
+	@include container-small-after(rgba(0, 0, 0, 0.5));
+  }
+  ul {
 
+	margin-top: 30px;
+  }
   li {
 	width: 100%;
 	float: left;
 	height: 80px;
+	display: table;
 	text-align: center;
 	background: #56504d;
+	position: relative;
 	$i: 1;
-	$animals: "\f09a", '\f099', '\f0e1', '\f113';
+	$animals: "\f09a", '\f099', '\f0e1';
 	@each $section in $animals {
 	  &:nth-child(#{$i}) a:after {
 		content: nth($animals, $i);
 		font-size: 40px;
 		$i: $i+1;
 	  }
+
+	}
+	span {
+
+	  display: none;
+
+	}
+	a {
+	  display: table-cell;
+	  vertical-align: middle;
+
+	}
+  }
+  .links__li--active {
+	background: #d2cec6;
+	border: 10px solid #6a635f;
+	border-left: 0;
+	border-radius: 0px 5px 5px 0;
+	& a:after {
+
+	  text-shadow: 0 0 5px #000;
+	  color: #fff;
+	}
+	span {
+	  width: 150px;
+	  padding-top: 30px;
+	  z-index: -1;
+	  display: block;
+	  height: 70px;
+	  background: #f6f6f6;
+	  font: 18px $secondary-font;
+	  border-radius: 0px 5px 5px 0;
+	  display: inline-block;
+	  @include absolute(-10px, "", "", 79px);
+
 	}
   }
 }

@@ -2,11 +2,14 @@
   font: 35px "3826";
   color: #595959;
   margin: 30px 0 0 30px;
-  float: left; }
+  float: left;
+  width: 335px; }
   .menu__nav li {
     float: left;
-    width: 100%;
-    height: 26px; }
+    clear: both;
+    height: 26px;
+    position: relative;
+    z-index: 1; }
     .menu__nav li:nth-child(1) a:hover {
       color: #d66f74; }
     .menu__nav li:nth-child(2) a:hover {
@@ -17,6 +20,27 @@
       color: #516fa9; }
     .menu__nav li:nth-child(5) a:hover {
       color: #f52e67; }
+  .menu__nav .menu__li--active {
+    float: right;
+    background: url("../img/bg_pattern_12.png");
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 4px 0 6px -4px rgba(0, 0, 0, 0.9); }
+    .menu__nav .menu__li--active a {
+      padding-right: 15px;
+      position: relative;
+      z-index: 2; }
+    .menu__nav .menu__li--active em {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background: url("../img/smoothVignette.png");
+      background-size: 926px 925px;
+      background-position: -226.234375px -30px;
+      left: 0;
+      top: 0; }
   .menu__nav a {
     text-transform: uppercase;
     color: inherit;
