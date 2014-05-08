@@ -19,7 +19,7 @@
 	$animals: #d66f74, #309ebc, #91c368, #516fa9, #f52e67;
 
 	@each $section in $animals {
-	  &:nth-child(#{$i}) a:hover {
+	  &:nth-child(#{$i}) a:hover, &.menu__li--active:nth-child(#{$i}) a {
 
 		color: nth($animals, $i);
 
