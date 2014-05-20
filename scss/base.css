@@ -21,3 +21,9 @@ body {
   z-index: 2;
   z-index: 1;
   position: relative; }
+
+.hidden {
+  display: none !important; }
+
+.visible {
+  display: block !important; }

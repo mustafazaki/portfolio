@@ -12,16 +12,26 @@
 	  opacity: 0.5;
 	  cursor: pointer;
 	}
+  }
 
-	//	&:after{
-	//
-	//	  @include overlay(1);
-	//	  left: 0;
-	//	  content: "";
-	//	  top: 0;
-	//	  background: rgba(48, 158, 188,0.8);
-	//
-	//	}
+  .work__li--active {
+	@include active-border(#309ebc);
+	img {
+	  opacity: 1;
+	}
+
+  }
+
+  .preview__div{
+
+	position: fixed;
+	left: 0;
+	top: 0;
+
+
+	img{
+	  width: 100%;
+	}
   }
 
 }

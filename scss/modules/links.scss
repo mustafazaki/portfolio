@@ -13,6 +13,12 @@
   ul {
 
 	margin-top: 30px;
+
+
+  }
+  .links__ul--deactive{
+
+
   }
   li {
 	width: 100%;
@@ -44,12 +50,10 @@
 	}
   }
   .links__li--active {
-	background: #d2cec6;
-	border: 10px solid #6a635f;
-	border-left: 0;
-	border-radius: 0px 5px 5px 0;
-	& a:after {
 
+	& a:after {
+	  background: #d2cec6;
+	  @include active-border(#6a635f);
 	  text-shadow: 0 0 5px #000;
 	  color: #fff;
 	}

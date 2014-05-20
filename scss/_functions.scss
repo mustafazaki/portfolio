@@ -54,5 +54,10 @@ $body-bg: url('../img/bg_pattern_12.png');
 	right: $right;
   }
 }
+@mixin active-border($bordercolor){
+  border: 10px solid $bordercolor;
+  border-left: 0;
+  border-radius: 0px 5px 5px 0;
+}
 
 ////////////mixins////////////////

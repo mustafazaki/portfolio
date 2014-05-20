@@ -8,6 +8,7 @@
   float: left;
   width: 335px;
 
+
   li {
 
 	float: left;
@@ -58,5 +59,9 @@
 	letter-spacing: -2px;
 	@include transition(all 0.3s linear);
   }
+
+}
+
+.menu__nav--deactive {
 
 }
